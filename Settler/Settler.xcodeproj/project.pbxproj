@@ -14,6 +14,11 @@
 		A79CB7391B8029A60080CFFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79CB7371B8029A60080CFFD /* LaunchScreen.storyboard */; };
 		A79CB7441B8029A60080CFFD /* SettlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7431B8029A60080CFFD /* SettlerTests.swift */; };
 		A79CB74F1B8029A60080CFFD /* SettlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB74E1B8029A60080CFFD /* SettlerUITests.swift */; };
+		A79CB75D1B8039820080CFFD /* BuildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB75C1B8039820080CFFD /* BuildViewController.swift */; };
+		A79CB75F1B8039900080CFFD /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB75E1B8039900080CFFD /* FarmViewController.swift */; };
+		A79CB7611B8039A00080CFFD /* TavernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7601B8039A00080CFFD /* TavernViewController.swift */; };
+		A79CB7631B8039B10080CFFD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7621B8039B10080CFFD /* MapViewController.swift */; };
+		A79CB7661B8039DB0080CFFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7651B8039DB0080CFFD /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		A79CB74A1B8029A60080CFFD /* SettlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79CB74E1B8029A60080CFFD /* SettlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlerUITests.swift; sourceTree = "<group>"; };
 		A79CB7501B8029A60080CFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79CB75C1B8039820080CFFD /* BuildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildViewController.swift; sourceTree = "<group>"; };
+		A79CB75E1B8039900080CFFD /* FarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
+		A79CB7601B8039A00080CFFD /* TavernViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TavernViewController.swift; sourceTree = "<group>"; };
+		A79CB7621B8039B10080CFFD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A79CB7651B8039DB0080CFFD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		A79CB72D1B8029A60080CFFD /* Settler */ = {
 			isa = PBXGroup;
 			children = (
+				A79CB7641B8039BB0080CFFD /* Source */,
 				A79CB72E1B8029A60080CFFD /* AppDelegate.swift */,
 				A79CB7301B8029A60080CFFD /* ViewController.swift */,
 				A79CB7321B8029A60080CFFD /* Main.storyboard */,
@@ -123,6 +134,18 @@
 				A79CB7501B8029A60080CFFD /* Info.plist */,
 			);
 			path = SettlerUITests;
+			sourceTree = "<group>";
+		};
+		A79CB7641B8039BB0080CFFD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A79CB75C1B8039820080CFFD /* BuildViewController.swift */,
+				A79CB75E1B8039900080CFFD /* FarmViewController.swift */,
+				A79CB7601B8039A00080CFFD /* TavernViewController.swift */,
+				A79CB7621B8039B10080CFFD /* MapViewController.swift */,
+				A79CB7651B8039DB0080CFFD /* MainViewController.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79CB7661B8039DB0080CFFD /* MainViewController.swift in Sources */,
+				A79CB75F1B8039900080CFFD /* FarmViewController.swift in Sources */,
+				A79CB7631B8039B10080CFFD /* MapViewController.swift in Sources */,
 				A79CB7311B8029A60080CFFD /* ViewController.swift in Sources */,
+				A79CB75D1B8039820080CFFD /* BuildViewController.swift in Sources */,
 				A79CB72F1B8029A60080CFFD /* AppDelegate.swift in Sources */,
+				A79CB7611B8039A00080CFFD /* TavernViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
