@@ -65,7 +65,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gCA-AI-Ykx" firstAttribute="leading" secondItem="7UU-Hk-jPT" secondAttribute="leading" id="0tL-Iq-ze1"/>
-                            <constraint firstItem="7UU-Hk-jPT" firstAttribute="leading" secondItem="ISj-aj-ZQU" secondAttribute="leadingMargin" constant="46" id="7Lw-fe-HSD"/>
+                            <constraint firstItem="7UU-Hk-jPT" firstAttribute="leading" secondItem="ISj-aj-ZQU" secondAttribute="leadingMargin" constant="40" id="3iR-Oe-gdV"/>
                             <constraint firstItem="7UU-Hk-jPT" firstAttribute="top" secondItem="HI2-SQ-FhE" secondAttribute="bottom" constant="60" id="7wX-3c-Rqh"/>
                             <constraint firstItem="5Kt-ku-ksW" firstAttribute="leading" secondItem="7UU-Hk-jPT" secondAttribute="leading" id="G6o-UD-gna"/>
                             <constraint firstItem="5Kt-ku-ksW" firstAttribute="top" secondItem="g40-fh-0jg" secondAttribute="bottom" constant="40" id="QR8-Qg-Fgj"/>
@@ -78,7 +78,7 @@
                                 <exclude reference="7UU-Hk-jPT"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7Lw-fe-HSD"/>
+                                <exclude reference="3iR-Oe-gdV"/>
                                 <exclude reference="7wX-3c-Rqh"/>
                                 <exclude reference="0tL-Iq-ze1"/>
                                 <exclude reference="h6T-lr-g6n"/>
@@ -93,7 +93,7 @@
                                 <include reference="7UU-Hk-jPT"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7Lw-fe-HSD"/>
+                                <include reference="3iR-Oe-gdV"/>
                                 <include reference="7wX-3c-Rqh"/>
                                 <include reference="0tL-Iq-ze1"/>
                                 <include reference="h6T-lr-g6n"/>
