@@ -9,5 +9,8 @@
 import Foundation
 
 class Archer: Hero {
-    
+    override init() {
+        super.init()
+        name = "Archer"
+    }
 }

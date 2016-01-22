@@ -9,5 +9,8 @@
 import Foundation
 
 class Priest: Hero {
-    
+    override init() {
+        super.init()
+        name = "Priest"
+    }
 }

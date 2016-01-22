@@ -15,21 +15,22 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func duel(sender: AnyObject) {
+        print("Duel start")
+        let team1 = Team("The Wind")
+        team1.addMember(Warrior())
+        team1.addMember(Archer())
+        team1.addMember(Wizard())
+        team1.addMember(Priest())
+        let team2 = Team("The Wave")
+        team2.addMember(Creep())
+        team2.addMember(Creep())
+        team2.addMember(Creep())
+        team2.addMember(Creep())
+        let result = Team.processBattle(team1, team2: team2)
+        let winner = result > 0 ? team1 : team2
+        print("Duel end. Winner is \(winner.name)")
     }
-    */
 
 }

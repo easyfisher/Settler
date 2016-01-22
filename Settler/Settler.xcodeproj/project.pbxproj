@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70260181C5239EB007B1A10 /* Creep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70260171C5239EB007B1A10 /* Creep.swift */; };
 		A79CB72F1B8029A60080CFFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB72E1B8029A60080CFFD /* AppDelegate.swift */; };
 		A79CB7311B8029A60080CFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7301B8029A60080CFFD /* ViewController.swift */; };
 		A79CB7341B8029A60080CFFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79CB7321B8029A60080CFFD /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		A79CB7611B8039A00080CFFD /* TavernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7601B8039A00080CFFD /* TavernViewController.swift */; };
 		A79CB7631B8039B10080CFFD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7621B8039B10080CFFD /* MapViewController.swift */; };
 		A79CB7661B8039DB0080CFFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7651B8039DB0080CFFD /* MainViewController.swift */; };
+		A79CE1791C5208C500C1A20D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CE1781C5208C500C1A20D /* Team.swift */; };
 		A7D540BF1C49263E00F4793D /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D540BE1C49263E00F4793D /* Unit.swift */; };
 		A7D540C11C49276400F4793D /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D540C01C49276400F4793D /* Hero.swift */; };
 		A7D540C31C4928A200F4793D /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D540C21C4928A200F4793D /* Warrior.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70260171C5239EB007B1A10 /* Creep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creep.swift; sourceTree = "<group>"; };
 		A79CB72B1B8029A60080CFFD /* Settler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79CB72E1B8029A60080CFFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79CB7301B8029A60080CFFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		A79CB7601B8039A00080CFFD /* TavernViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TavernViewController.swift; sourceTree = "<group>"; };
 		A79CB7621B8039B10080CFFD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A79CB7651B8039DB0080CFFD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A79CE1781C5208C500C1A20D /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		A7D540BE1C49263E00F4793D /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		A7D540C01C49276400F4793D /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		A7D540C21C4928A200F4793D /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				A7D540C41C4928D500F4793D /* Archer.swift */,
 				A7D540C61C4928E600F4793D /* Wizard.swift */,
 				A7D540C81C49292700F4793D /* Priest.swift */,
+				A79CE1781C5208C500C1A20D /* Team.swift */,
+				A70260171C5239EB007B1A10 /* Creep.swift */,
 			);
 			name = Unit;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 			files = (
 				A7D540C91C49292700F4793D /* Priest.swift in Sources */,
 				A79CB7661B8039DB0080CFFD /* MainViewController.swift in Sources */,
+				A79CE1791C5208C500C1A20D /* Team.swift in Sources */,
 				A79CB75F1B8039900080CFFD /* FarmViewController.swift in Sources */,
 				A7D540C51C4928D500F4793D /* Archer.swift in Sources */,
 				A7D540C11C49276400F4793D /* Hero.swift in Sources */,
@@ -315,6 +322,7 @@
 				A79CB75D1B8039820080CFFD /* BuildViewController.swift in Sources */,
 				A7D540C31C4928A200F4793D /* Warrior.swift in Sources */,
 				A7D540BF1C49263E00F4793D /* Unit.swift in Sources */,
+				A70260181C5239EB007B1A10 /* Creep.swift in Sources */,
 				A79CB72F1B8029A60080CFFD /* AppDelegate.swift in Sources */,
 				A79CB7611B8039A00080CFFD /* TavernViewController.swift in Sources */,
 			);

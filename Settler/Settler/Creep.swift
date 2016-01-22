@@ -1,16 +1,16 @@
 //
-//  Wizard.swift
+//  Creep.swift
 //  Settler
 //
-//  Created by Easter on 1/15/16.
+//  Created by Easter on 1/22/16.
 //  Copyright © 2016 Easter. All rights reserved.
 //
 
 import Foundation
 
-class Wizard: Hero {
+class Creep: Unit {
     override init() {
         super.init()
-        name = "Wizard"
+        name = "Creep"
     }
 }

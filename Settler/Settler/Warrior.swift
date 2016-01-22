@@ -9,8 +9,8 @@
 import Foundation
 
 class Warrior: Hero {
-    override var level: Int {
-        didSet {
-        }
+    override init() {
+        super.init()
+        name = "Warrior"
     }
 }
