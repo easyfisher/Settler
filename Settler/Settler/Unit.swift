@@ -61,7 +61,7 @@ class Unit {
         actionPoint = 0
     }
     
-    func takeStrike(strike: (damage: Double, accPoint: Double)) -> Double {
+    func takeDamage(strike: (damage: Double, accPoint: Double)) -> Double {
         if (Math.gamble(status.dodgeRate(strike.accPoint))) {
             return 0
         }
@@ -70,6 +70,10 @@ class Unit {
         status.hitPoint -= damage
         
         return damage
+    }
+    
+    func takeHeal(heal: Double) {
+        status.hitPoint += heal
     }
     
     func addSkill(skill: Skill) {

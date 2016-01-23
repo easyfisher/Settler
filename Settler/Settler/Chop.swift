@@ -15,7 +15,7 @@ class Chop: Skill {
             if (Math.gamble(unit.status.crit)) {
                 damage *= unit.status.critDamage
             }
-            let finalDamage = target.takeStrike((damage, unit.status.accPoint))
+            let finalDamage = target.takeDamage((damage, unit.status.accPoint))
             print("\(unit.name) of team \(ally.name) did \(finalDamage) damage to \(target.name) of team \(enemy.name)")
         }
     }

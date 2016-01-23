@@ -56,6 +56,10 @@ class UnitStatus {
     
     func restore() {
         hitPoint = basis.hitPoint
+        for (_, property) in properties {
+            property.mods.removeAll()
+            property.rateMods.removeAll()
+        }
     }
     
     func addBuff(buff: Buff) {

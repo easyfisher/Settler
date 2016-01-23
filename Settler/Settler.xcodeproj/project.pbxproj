@@ -130,6 +130,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A77D07CC1C5379EC0043BE07 /* Career */ = {
+			isa = PBXGroup;
+			children = (
+				A7D540C21C4928A200F4793D /* Warrior.swift */,
+				A7D540C41C4928D500F4793D /* Archer.swift */,
+				A7D540C61C4928E600F4793D /* Wizard.swift */,
+				A7D540C81C49292700F4793D /* Priest.swift */,
+			);
+			name = Career;
+			sourceTree = "<group>";
+		};
 		A785DFA01C5275500062D76B /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,15 +245,12 @@
 		A7D540BD1C49262700F4793D /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				A77D07CC1C5379EC0043BE07 /* Career */,
 				A7D540BE1C49263E00F4793D /* Unit.swift */,
 				A785DFB11C535AF30062D76B /* UnitBasis.swift */,
 				A785DFB31C535B1E0062D76B /* UnitStatus.swift */,
 				A785DFB51C535B5D0062D76B /* Property.swift */,
 				A7D540C01C49276400F4793D /* Hero.swift */,
-				A7D540C21C4928A200F4793D /* Warrior.swift */,
-				A7D540C41C4928D500F4793D /* Archer.swift */,
-				A7D540C61C4928E600F4793D /* Wizard.swift */,
-				A7D540C81C49292700F4793D /* Priest.swift */,
 				A79CE1781C5208C500C1A20D /* Team.swift */,
 				A70260171C5239EB007B1A10 /* Creep.swift */,
 			);
