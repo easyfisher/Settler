@@ -10,17 +10,27 @@ import Foundation
 
 class Property {
     var base: Double = 0
-    var linearMods: [Double] = [Double]()
-    var mods: [Double] = [Double]()
+    var mods = [Buff]()
+    var rateMods = [Buff]()
+    
     var value: Double {
-        var totalLinearMod = 0.0
-        for linearMod in linearMods {
-            totalLinearMod += linearMod
-        }
         var totalMod = 0.0
         for mod in mods {
-            totalMod += mod
+            totalMod += mod.value
         }
-        return (base + totalLinearMod) * (1 + totalMod)
+        var totalRateMod = 0.0
+        for mod in rateMods {
+            totalRateMod += mod.value
+        }
+        return (base + totalMod) * (1 + totalRateMod)
     }
+}
+
+enum PropertyKey: String {
+    case Damage = "damage"
+    case Speed = "speed"
+    case Crit = "crit"
+    case CritDamage = "critDamage"
+    case AccPoint = "accPoint"
+    case ArmorPoint = "armorPoint"
 }

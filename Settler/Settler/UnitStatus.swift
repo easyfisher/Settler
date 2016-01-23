@@ -9,42 +9,66 @@
 import Foundation
 
 class UnitStatus {
-    var hitPoint: Double = 0
     
+    var hitPoint: Double = 0
+    var properties = Dictionary<String, Property>()
     var basis = UnitBasis()
-    var damage: Property
-    var speed: Property
-    var crit: Property
-    var critDamage: Property
-    var accPoint: Property
-    var armorPoint: Property
+    var damage: Double {
+        var damage = properties[PropertyKey.Damage.rawValue]!.value
+        if damage < 0 { damage = 0 }
+        return damage
+    }
+    var speed: Double {
+        return properties[PropertyKey.Speed.rawValue]!.value
+    }
+    var crit: Double {
+        return properties[PropertyKey.Crit.rawValue]!.value
+    }
+    var critDamage: Double {
+        return properties[PropertyKey.CritDamage.rawValue]!.value
+    }
+    var accPoint: Double {
+        return properties[PropertyKey.AccPoint.rawValue]!.value
+    }
+    var armorPoint: Double {
+        return properties[PropertyKey.ArmorPoint.rawValue]!.value
+    }
     var armorRate: Double {
-        return Math.armorRate(armorPoint.value)
+        return Math.armorRate(armorPoint)
     }
     
     init() {
         basis.level = 1
         hitPoint = basis.hitPoint
-        damage = Property()
-        damage.base = basis.damage
-        speed = Property()
-        speed.base = basis.speed
-        crit = Property()
-        crit.base = basis.crit
-        critDamage = Property()
-        critDamage.base = basis.critDamage
-        accPoint = Property()
-        accPoint.base = basis.accPoint
-        armorPoint = Property()
-        armorPoint.base = basis.armor
+        properties[PropertyKey.Damage.rawValue] = Property()
+        properties[PropertyKey.Damage.rawValue]!.base = basis.damage
+        properties[PropertyKey.Speed.rawValue] = Property()
+        properties[PropertyKey.Speed.rawValue]!.base = basis.speed
+        properties[PropertyKey.Crit.rawValue] = Property()
+        properties[PropertyKey.Crit.rawValue]!.base = basis.crit
+        properties[PropertyKey.CritDamage.rawValue] = Property()
+        properties[PropertyKey.CritDamage.rawValue]!.base = basis.critDamage
+        properties[PropertyKey.AccPoint.rawValue] = Property()
+        properties[PropertyKey.AccPoint.rawValue]!.base = basis.accPoint
+        properties[PropertyKey.ArmorPoint.rawValue] = Property()
+        properties[PropertyKey.ArmorPoint.rawValue]!.base = basis.armor
     }
     
     func restore() {
         hitPoint = basis.hitPoint
     }
     
+    func addBuff(buff: Buff) {
+        if buff.type == Buff.BuffType.Mod  {
+           properties[buff.property.rawValue]!.mods.append(buff)
+        } else if buff.type == Buff.BuffType.RateMod {
+            properties[buff.property.rawValue]!.rateMods.append(buff)
+        }
+        
+    }
+    
     func dodgeRate(accurate: Double) -> Double {
-        let propertyDodge = basis.dodgePoint >= accurate ? Math.armorRate(basis.dodgePoint - accurate) : -Math.armorRate(accurate - basis.dodgePoint)
+        let propertyDodge = Math.armorRate(basis.dodgePoint - accurate)
         var result = basis.baseDodge + propertyDodge
         if result > 1 {
             result = 1

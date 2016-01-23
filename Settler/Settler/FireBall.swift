@@ -9,13 +9,18 @@
 import Foundation
 
 class FireBall: Skill {
+    override func prepareBattle(ally: Team, enemy: Team) {
+        unit.addBuff(FireBallBuff())
+    }
+    
     override func processBattle(ally: Team, enemy: Team) {
         if let target = enemy.firstAlifeMember {
-            var damage = unit.status.damage.value
-            if (Math.gamble(unit.status.crit.value)) {
-                damage *= unit.status.critDamage.value
+            let damageModifier = 2.2
+            var damage = unit.status.damage * damageModifier
+            if (Math.gamble(unit.status.crit)) {
+                damage *= unit.status.critDamage
             }
-            let finalDamage = target.takeStrike((damage, unit.status.accPoint.value))
+            let finalDamage = target.takeStrike((damage, unit.status.accPoint))
             print("\(unit.name) of team \(ally.name) did \(finalDamage) damage to \(target.name) of team \(enemy.name)")
         }
     }

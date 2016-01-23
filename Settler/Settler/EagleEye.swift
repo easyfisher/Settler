@@ -1,5 +1,5 @@
 //
-//  WithStand.swift
+//  EagleEye.swift
 //  Settler
 //
 //  Created by Easter on 1/23/16.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-class WithStand: Skill {
+class EagleEye: Skill {
     override func prepareBattle(ally: Team, enemy: Team) {
-        unit.addBuff(WithStandBuff())
+        unit.addBuff(EagleEyeBuff1())
+        unit.addBuff(EagleEyeBuff2())
     }
 }

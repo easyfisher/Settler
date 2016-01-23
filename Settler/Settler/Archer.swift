@@ -13,5 +13,6 @@ class Archer: Hero {
         super.init()
         name = "Archer"
         addSkill(Shoot())
+        addSkill(EagleEye())
     }
 }

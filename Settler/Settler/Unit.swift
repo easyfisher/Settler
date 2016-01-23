@@ -48,7 +48,7 @@ class Unit {
     }
     
     func charge() {
-        actionProgress += status.speed.value
+        actionProgress += status.speed
         if actionProgress >= 100 {
             actionProgress %= 100
             actionPoint++
@@ -75,5 +75,9 @@ class Unit {
     func addSkill(skill: Skill) {
         skills.append(skill)
         skill.unit = self
+    }
+    
+    func addBuff(buff: Buff) {
+        status.addBuff(buff)
     }
 }

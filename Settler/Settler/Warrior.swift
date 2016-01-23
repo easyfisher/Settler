@@ -13,5 +13,6 @@ class Warrior: Hero {
         super.init()
         name = "Warrior"
         addSkill(Chop())
+        addSkill(WithStand())
     }
 }
