@@ -22,6 +22,15 @@ class Unit {
     var isCharged: Bool {
         return actionPoint > 0
     }
+    var level: Int {
+        set {
+            status.basis.level = newValue
+            status.initProperties()
+        }
+        get {
+            return status.basis.level
+        }
+    }
     
     init() {
         name = ""
@@ -83,5 +92,9 @@ class Unit {
     
     func addBuff(buff: Buff) {
         status.addBuff(buff)
+    }
+    
+    func hasBuff(buff: Buff) -> Bool {
+        return status.hasBuff(buff)
     }
 }

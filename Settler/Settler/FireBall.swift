@@ -15,7 +15,7 @@ class FireBall: Skill {
     
     override func processBattle(ally: Team, enemy: Team) {
         if let target = enemy.firstAlifeMember {
-            let damageModifier = 2.2
+            let damageModifier = 2.5
             var damage = unit.status.damage * damageModifier
             if (Math.gamble(unit.status.crit)) {
                 damage *= unit.status.critDamage

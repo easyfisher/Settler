@@ -40,6 +40,10 @@ class UnitStatus {
     init() {
         basis.level = 1
         hitPoint = basis.hitPoint
+        initProperties()
+    }
+    
+    func initProperties() {
         properties[PropertyKey.Damage.rawValue] = Property()
         properties[PropertyKey.Damage.rawValue]!.base = basis.damage
         properties[PropertyKey.Speed.rawValue] = Property()
@@ -70,6 +74,25 @@ class UnitStatus {
         }
         
     }
+    
+    func hasBuff(buff: Buff) -> Bool {
+        let property = properties[buff.property.rawValue]!
+        if buff.type == .Mod {
+            for mod in property.mods {
+                if buff.dynamicType === mod.dynamicType {
+                    return true
+                }
+            }
+        } else if buff.type == .RateMod {
+            for mod in property.rateMods {
+                if buff.dynamicType === mod.dynamicType {
+                    return true
+                }
+            }
+        }
+        
+        return false
+     }
     
     func dodgeRate(accurate: Double) -> Double {
         let propertyDodge = Math.armorRate(basis.dodgePoint - accurate)

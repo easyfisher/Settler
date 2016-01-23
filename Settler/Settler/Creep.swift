@@ -12,6 +12,7 @@ class Creep: Unit {
     override init() {
         super.init()
         name = "Creep"
+        level = 2
         addSkill(Chop())
     }
 }

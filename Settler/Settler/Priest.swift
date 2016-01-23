@@ -13,5 +13,6 @@ class Priest: Hero {
         super.init()
         name = "Priest"
         addSkill(HolyLight())
+        addSkill(InnerFire())
     }
 }

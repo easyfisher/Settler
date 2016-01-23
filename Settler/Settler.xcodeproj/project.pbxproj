@@ -11,6 +11,8 @@
 		A75B1E7A1C5370170045C991 /* EagleEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B1E791C5370170045C991 /* EagleEye.swift */; };
 		A75B1E7C1C53705E0045C991 /* EagleEyeBuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B1E7B1C53705E0045C991 /* EagleEyeBuff.swift */; };
 		A77174AD1C5373FF002922FD /* FireBallBuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77174AC1C5373FF002922FD /* FireBallBuff.swift */; };
+		A77D07CE1C53B7940043BE07 /* InnerFireBuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77D07CD1C53B7940043BE07 /* InnerFireBuff.swift */; };
+		A77D07D01C53B7C60043BE07 /* InnerFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77D07CF1C53B7C60043BE07 /* InnerFire.swift */; };
 		A785DFA21C5275AC0062D76B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFA11C5275AC0062D76B /* Math.swift */; };
 		A785DFA51C533AAC0062D76B /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFA41C533AAC0062D76B /* Skill.swift */; };
 		A785DFA71C533B4D0062D76B /* Chop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFA61C533B4D0062D76B /* Chop.swift */; };
@@ -66,6 +68,8 @@
 		A75B1E791C5370170045C991 /* EagleEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EagleEye.swift; sourceTree = "<group>"; };
 		A75B1E7B1C53705E0045C991 /* EagleEyeBuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EagleEyeBuff.swift; sourceTree = "<group>"; };
 		A77174AC1C5373FF002922FD /* FireBallBuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBallBuff.swift; sourceTree = "<group>"; };
+		A77D07CD1C53B7940043BE07 /* InnerFireBuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerFireBuff.swift; sourceTree = "<group>"; };
+		A77D07CF1C53B7C60043BE07 /* InnerFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerFire.swift; sourceTree = "<group>"; };
 		A785DFA11C5275AC0062D76B /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		A785DFA41C533AAC0062D76B /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		A785DFA61C533B4D0062D76B /* Chop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chop.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				A785DFAC1C533BC80062D76B /* HolyLight.swift */,
 				A785DFAE1C5357DF0062D76B /* WithStand.swift */,
 				A75B1E791C5370170045C991 /* EagleEye.swift */,
+				A77D07CF1C53B7C60043BE07 /* InnerFire.swift */,
 			);
 			name = Skill;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				A785DFB91C5369A70062D76B /* WithStandBuff.swift */,
 				A75B1E7B1C53705E0045C991 /* EagleEyeBuff.swift */,
 				A77174AC1C5373FF002922FD /* FireBallBuff.swift */,
+				A77D07CD1C53B7940043BE07 /* InnerFireBuff.swift */,
 			);
 			name = Buff;
 			sourceTree = "<group>";
@@ -400,9 +406,11 @@
 				A7D540C71C4928E600F4793D /* Wizard.swift in Sources */,
 				A79CB7631B8039B10080CFFD /* MapViewController.swift in Sources */,
 				A785DFAD1C533BC80062D76B /* HolyLight.swift in Sources */,
+				A77D07D01C53B7C60043BE07 /* InnerFire.swift in Sources */,
 				A75B1E7C1C53705E0045C991 /* EagleEyeBuff.swift in Sources */,
 				A79CB7311B8029A60080CFFD /* ViewController.swift in Sources */,
 				A79CB75D1B8039820080CFFD /* BuildViewController.swift in Sources */,
+				A77D07CE1C53B7940043BE07 /* InnerFireBuff.swift in Sources */,
 				A75B1E7A1C5370170045C991 /* EagleEye.swift in Sources */,
 				A7D540C31C4928A200F4793D /* Warrior.swift in Sources */,
 				A77174AD1C5373FF002922FD /* FireBallBuff.swift in Sources */,
