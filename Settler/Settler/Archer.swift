@@ -12,5 +12,6 @@ class Archer: Hero {
     override init() {
         super.init()
         name = "Archer"
+        addSkill(Shoot())
     }
 }

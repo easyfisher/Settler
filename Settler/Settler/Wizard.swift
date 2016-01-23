@@ -12,5 +12,6 @@ class Wizard: Hero {
     override init() {
         super.init()
         name = "Wizard"
+        addSkill(FireBall())
     }
 }

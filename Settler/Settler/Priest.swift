@@ -12,5 +12,6 @@ class Priest: Hero {
     override init() {
         super.init()
         name = "Priest"
+        addSkill(HolyLight())
     }
 }

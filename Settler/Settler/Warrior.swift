@@ -12,5 +12,6 @@ class Warrior: Hero {
     override init() {
         super.init()
         name = "Warrior"
+        addSkill(Chop())
     }
 }

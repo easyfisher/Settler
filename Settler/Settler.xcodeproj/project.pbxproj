@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A70260181C5239EB007B1A10 /* Creep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70260171C5239EB007B1A10 /* Creep.swift */; };
+		A785DFA21C5275AC0062D76B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFA11C5275AC0062D76B /* Math.swift */; };
+		A785DFA51C533AAC0062D76B /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFA41C533AAC0062D76B /* Skill.swift */; };
+		A785DFA71C533B4D0062D76B /* Chop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFA61C533B4D0062D76B /* Chop.swift */; };
+		A785DFA91C533B920062D76B /* Shoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFA81C533B920062D76B /* Shoot.swift */; };
+		A785DFAB1C533B9D0062D76B /* FireBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFAA1C533B9D0062D76B /* FireBall.swift */; };
+		A785DFAD1C533BC80062D76B /* HolyLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFAC1C533BC80062D76B /* HolyLight.swift */; };
+		A785DFAF1C5357DF0062D76B /* WithStand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFAE1C5357DF0062D76B /* WithStand.swift */; };
+		A785DFB21C535AF30062D76B /* UnitBasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFB11C535AF30062D76B /* UnitBasis.swift */; };
+		A785DFB41C535B1E0062D76B /* UnitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFB31C535B1E0062D76B /* UnitStatus.swift */; };
+		A785DFB61C535B5E0062D76B /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785DFB51C535B5D0062D76B /* Property.swift */; };
 		A79CB72F1B8029A60080CFFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB72E1B8029A60080CFFD /* AppDelegate.swift */; };
 		A79CB7311B8029A60080CFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB7301B8029A60080CFFD /* ViewController.swift */; };
 		A79CB7341B8029A60080CFFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79CB7321B8029A60080CFFD /* Main.storyboard */; };
@@ -48,6 +58,16 @@
 
 /* Begin PBXFileReference section */
 		A70260171C5239EB007B1A10 /* Creep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creep.swift; sourceTree = "<group>"; };
+		A785DFA11C5275AC0062D76B /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		A785DFA41C533AAC0062D76B /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		A785DFA61C533B4D0062D76B /* Chop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chop.swift; sourceTree = "<group>"; };
+		A785DFA81C533B920062D76B /* Shoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoot.swift; sourceTree = "<group>"; };
+		A785DFAA1C533B9D0062D76B /* FireBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBall.swift; sourceTree = "<group>"; };
+		A785DFAC1C533BC80062D76B /* HolyLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolyLight.swift; sourceTree = "<group>"; };
+		A785DFAE1C5357DF0062D76B /* WithStand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithStand.swift; sourceTree = "<group>"; };
+		A785DFB11C535AF30062D76B /* UnitBasis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitBasis.swift; sourceTree = "<group>"; };
+		A785DFB31C535B1E0062D76B /* UnitStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitStatus.swift; sourceTree = "<group>"; };
+		A785DFB51C535B5D0062D76B /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		A79CB72B1B8029A60080CFFD /* Settler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79CB72E1B8029A60080CFFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79CB7301B8029A60080CFFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +120,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A785DFA01C5275500062D76B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A785DFA11C5275AC0062D76B /* Math.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		A785DFA31C533A960062D76B /* Skill */ = {
+			isa = PBXGroup;
+			children = (
+				A785DFA41C533AAC0062D76B /* Skill.swift */,
+				A785DFA61C533B4D0062D76B /* Chop.swift */,
+				A785DFA81C533B920062D76B /* Shoot.swift */,
+				A785DFAA1C533B9D0062D76B /* FireBall.swift */,
+				A785DFAC1C533BC80062D76B /* HolyLight.swift */,
+				A785DFAE1C5357DF0062D76B /* WithStand.swift */,
+			);
+			name = Skill;
+			sourceTree = "<group>";
+		};
+		A785DFB01C5359930062D76B /* Buff */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Buff;
+			sourceTree = "<group>";
+		};
 		A79CB7221B8029A60080CFFD = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +203,9 @@
 		A79CB7641B8039BB0080CFFD /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A785DFB01C5359930062D76B /* Buff */,
+				A785DFA31C533A960062D76B /* Skill */,
+				A785DFA01C5275500062D76B /* Util */,
 				A7D540BD1C49262700F4793D /* Unit */,
 				A79CB75C1B8039820080CFFD /* BuildViewController.swift */,
 				A79CB75E1B8039900080CFFD /* FarmViewController.swift */,
@@ -169,6 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				A7D540BE1C49263E00F4793D /* Unit.swift */,
+				A785DFB11C535AF30062D76B /* UnitBasis.swift */,
+				A785DFB31C535B1E0062D76B /* UnitStatus.swift */,
+				A785DFB51C535B5D0062D76B /* Property.swift */,
 				A7D540C01C49276400F4793D /* Hero.swift */,
 				A7D540C21C4928A200F4793D /* Warrior.swift */,
 				A7D540C41C4928D500F4793D /* Archer.swift */,
@@ -242,6 +296,7 @@
 		A79CB7231B8029A60080CFFD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ES;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Easter;
 				TargetAttributes = {
@@ -311,20 +366,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7D540C91C49292700F4793D /* Priest.swift in Sources */,
+				A785DFA91C533B920062D76B /* Shoot.swift in Sources */,
 				A79CB7661B8039DB0080CFFD /* MainViewController.swift in Sources */,
 				A79CE1791C5208C500C1A20D /* Team.swift in Sources */,
 				A79CB75F1B8039900080CFFD /* FarmViewController.swift in Sources */,
+				A785DFB61C535B5E0062D76B /* Property.swift in Sources */,
+				A785DFA51C533AAC0062D76B /* Skill.swift in Sources */,
 				A7D540C51C4928D500F4793D /* Archer.swift in Sources */,
 				A7D540C11C49276400F4793D /* Hero.swift in Sources */,
 				A7D540C71C4928E600F4793D /* Wizard.swift in Sources */,
 				A79CB7631B8039B10080CFFD /* MapViewController.swift in Sources */,
+				A785DFAD1C533BC80062D76B /* HolyLight.swift in Sources */,
 				A79CB7311B8029A60080CFFD /* ViewController.swift in Sources */,
 				A79CB75D1B8039820080CFFD /* BuildViewController.swift in Sources */,
 				A7D540C31C4928A200F4793D /* Warrior.swift in Sources */,
 				A7D540BF1C49263E00F4793D /* Unit.swift in Sources */,
+				A785DFB41C535B1E0062D76B /* UnitStatus.swift in Sources */,
+				A785DFAB1C533B9D0062D76B /* FireBall.swift in Sources */,
 				A70260181C5239EB007B1A10 /* Creep.swift in Sources */,
 				A79CB72F1B8029A60080CFFD /* AppDelegate.swift in Sources */,
+				A785DFB21C535AF30062D76B /* UnitBasis.swift in Sources */,
+				A785DFAF1C5357DF0062D76B /* WithStand.swift in Sources */,
+				A785DFA71C533B4D0062D76B /* Chop.swift in Sources */,
 				A79CB7611B8039A00080CFFD /* TavernViewController.swift in Sources */,
+				A785DFA21C5275AC0062D76B /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

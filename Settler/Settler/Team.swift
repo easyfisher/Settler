@@ -19,6 +19,15 @@ class Team {
         }
         return false
     }
+    var firstAlifeMember: Unit? {
+        for member in members {
+            if member.alife {
+                return member
+            }
+        }
+        
+        return nil
+    }
     
     init() {
         name = "Team 0"
@@ -39,18 +48,26 @@ class Team {
         member.team = self
     }
     
-    static func processBattle(var team1: Team, var team2: Team) -> Int {
+    func prepareBattle(enemy: Team) {
+        for member in members {
+            member.prepareBattle(enemy)
+        }
+    }
+    
+    static func processBattle(team1: Team, team2: Team) -> Int {
         team1.restore()
         team2.restore()
+        
+        team1.prepareBattle(team2)
+        team2.prepareBattle(team1)
         
         var turn = 0
         while team1.alife && team2.alife {
             turn++
             for unit in team1.members {
                 if unit.alife {
-                    unit.skillPoint += unit.basis.speed
-                    if unit.skillPoint >= 100 {
-                        unit.skillPoint %= 100
+                    unit.charge()
+                    if unit.isCharged {
                         unit.attack(team2)
                     }
                 }
@@ -62,9 +79,8 @@ class Team {
             
             for unit in team2.members {
                 if unit.alife {
-                    unit.skillPoint += unit.basis.speed
-                    if unit.skillPoint >= 100 {
-                        unit.skillPoint %= 100
+                    unit.charge()
+                    if unit.isCharged {
                         unit.attack(team1)
                     }
                 }
